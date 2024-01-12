@@ -12,7 +12,7 @@
 		<h1>秘密のメモ管理サイト</h1>
 		<p>
 			このページでは正しい名前とパスワードを入れることでその人のメモを表示します。<br>
-			例としてユーザー名:<font color="blue">Bob</font>,パスワード:<font color="blue">D8G@wPx9e2T3</font>を入力してみてください。<br>
+			例としてユーザー名:<font color="blue">Bob</font>,パスワード:<font color="blue">D8GwwPx9e2T3</font>を入力してみてください。<br>
 		</p>
 		<form method="POST" action="">
 			<input type="text" name="name" placeholder="ユーザー名を入力"><br>
