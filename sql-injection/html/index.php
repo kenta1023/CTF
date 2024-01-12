@@ -34,7 +34,7 @@ $db_password = "user025pass";
 if(!empty($_POST)){
 	$name = $_POST['name'];
 	$password = $_POST['password'];
-	try{
+		try{
 		$dbh = new PDO($dsn, $db_user, $db_password);
 		$sql = $dbh->prepare('SELECT * FROM userlist WHERE name=\'' . $name . '\' AND password=\'' . $password . '\' ;');
 		$sql->execute();
@@ -50,7 +50,7 @@ if(!empty($_POST)){
 			} while ($result = $sql->fetch(PDO::FETCH_ASSOC));
 			echo "</table>\n";
 		} else {
-			echo "ユーザー名またはパスワードが違います。";
+			echo "<p>ユーザー名またはパスワードが違います。</p>";
 		}
 	}catch(PDOException $e){
 		//コメントを解除でエラー文をweb上に表示
