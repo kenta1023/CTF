@@ -22,3 +22,9 @@ flag設定法：directory_traversal/Dockerfile　L.6 環境変数として設定
 SQLインジェクションを知ってもらう目的で作問    
 flag設定法：sql-injection/mysql/initdb.d/02create.sql　L.2  
 
+
+### sql-injection2
+プロジェクト内CTFで作問した問題  
+フロントエンドでのエスケープが有効でないことを知ってもらう+自作コードでエスケープ等は作成すべきではないことを伝える目的で作成  
+flag設定法：sql-injection2/mysql/initdb.d/02create.sql　L.2
+
