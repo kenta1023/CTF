@@ -1,7 +1,7 @@
 1. Dockerイメージをビルドする
 `docker build -t flask-app .`
 2. Dockerコンテナ起動
-`docker run -p 5000:5000 flask-app`
+`docker run -p 50000:50000 flask-app`
 3. アクセス
-http://<IPアドレス>:5000/
+http://<IPアドレス>:50000/
 

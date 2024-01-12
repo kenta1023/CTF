@@ -7,7 +7,7 @@ services:
         volumes:
             - ./html:/var/www/html
         ports:
-            - 8080:80
+            - 50200:80
     mysql:
         container_name: mysql_sql-injection
         image: mysql:8.0

@@ -1,5 +1,5 @@
 # docker build -t directory_traversal .
-# docker run -p 8080:80 directory_traversal
+# docker run -p 50100:80 directory_traversal
 FROM python:3.9-slim-bookworm
 
 # 環境変数FLAGを設定
