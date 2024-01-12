@@ -3,7 +3,7 @@
 FROM python:3.9-slim-bookworm
 
 # 環境変数FLAGを設定
-ENV FLAG=flag{test}
+ENV FLAG=kitsec{testflag}
 
 RUN mkdir /app
 WORKDIR /app

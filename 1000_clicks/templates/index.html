@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>カウントゲーム</title>
     <script>
         function sendRequest() {
             // 現在のcountの値を取得
             let currentCount = parseInt(document.getElementById("countValue").textContent);
-            
+
             // count + 1 の値でGETリクエストを送信
             window.location.href = `/?count=${currentCount + 1}`;
         }
     </script>
 </head>
+
 <body>
     <h1>クリックゲーム</h1>
-	<p>1000回以上クリックすると解答が表示されるよ</p>
+    <p>1000回以上クリックすると解答が表示されるよ</p>
     <p>現在のカウント: <span id="countValue">{{ count }}</span></p>
 
     <button onclick="sendRequest()">+1</button>
@@ -25,10 +27,10 @@
     <!-- countが1000以上の場合、FLAGを表示 -->
     {% if count >= 1000 %}
     <div>
-		<p>おめでとうございます！カウントが1000を超えました。</p>
-        <h2>kitsec{Change_query_parameter}</h2>
+        <p>おめでとうございます！カウントが1000を超えました。</p>
+        <h2>kitsec{testflag}</h2>
     </div>
     {% endif %}
 </body>
-</html>
 
+</html>
