@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>カウントゲーム</title>
+  </head>
+
+  <body>
+    <h1>クリックゲーム2</h1>
+    <p>
+      1000回以上クリックすると解答が表示されるよ<br />クリックゲーム1とは違った方法でcountのデータを送信しているよ
+    </p>
+    <p>現在のカウント: <span id="countValue">{{ count }}</span></p>
+
+    <form method="POST">
+      <input type="hidden" name="count" value="{{ count+1 }}" />
+      <input type="submit" value="+1" />
+    </form>
+
+    <!-- countが1000以上の場合、FLAGを表示 -->
+    {% if count >= 1000 %}
+    <div>
+      <p>おめでとうございます！カウントが1000を超えました。</p>
+      <h2>kitsec{testflag}</h2>
+    </div>
+    {% endif %}
+  </body>
+</html>
